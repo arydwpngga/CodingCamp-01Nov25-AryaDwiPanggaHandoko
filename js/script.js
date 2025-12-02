@@ -1,6 +1,6 @@
 // Greeting
 document.getElementById("setNameBtn").addEventListener("click", function () {
-    const name = document.getElementById("nameInput").ariaValueMax.trim();
+    const name = document.getElementById("nameInput").value.trim();
     const welcomeText = document.getElementById("welcomeText");
 
     if (name === "") {
@@ -14,10 +14,10 @@ document.getElementById("setNameBtn").addEventListener("click", function () {
 document.getElementById("messageForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const name = document.getElementById("formName").ariaValueMax.trim();
-    const email = document.getElementById("formEmail").ariaValueMax.trim();
-    const phone = document.getElementById("formPhone").ariaValueMax.trim();
-    const message = document.getElementById("formMessage").ariaValueMax.trim();
+    const name = document.getElementById("formName").value.trim();
+    const email = document.getElementById("formEmail").value.trim();
+    const phone = document.getElementById("formPhone").value.trim();
+    const message = document.getElementById("formMessage").value.trim();
 
     if (!name || !email || !phone || !message) {
         alert("All fields must be filled!");
