@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">MyCompany</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#contact">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <h1 id="welcomeText">Hi, Welcome to Website</h1>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button id="setNameBtn">Set Name</button>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="profile" class="profile">
+        <h2>About Our Company</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <h3>Vision</h3>
+        <p>To be a leading company in innovation and services.</p>
+
+        <h3>Mission</h3>
+        <ul>
+            <li>Deliver the Best Product.</li>
+            <li>Provide Excellent Customer Service.</li>
+            <li>Grow sustainably with our stakeholders.</li>
+        </ul>
+
+        <h3>Our Headquarters</h3>
+        <div class="hq">
+            <div class="circle">Jakarta</div>
+            <div class="circle">Bandung</div>
+            <div class="circle">Surabaya</div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+     <section class="contact" id="contact">
+        <h2>Message Us</h2>
+
+        <form id="messageForm">
+            <label>Name</label>
+            <input type="text" id="formName">
+
+            <label>Email</label>
+            <input type="text" id="formEmail">
+
+            <label>Phone Number</label>
+            <input type="text" id="formPhone">
+
+            <label>Message</label>
+            <textarea id="formMessage"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="message-output">
+            <h3>Submitted Message</h3>
+            <pre id="outputArea">No Data Yet.</pre>
+        </div>
+     </section>
+
+     <script src="js/script.js"></script>
+</body>
+
+</html>
